@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桌面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-scanlines crt-vignette crt-flicker">
+
+    <div class="desktop boot-anim">
+
+        <!-- ===== 桌面图标 ===== -->
+        <div class="desktop-icons">
+
+            <!-- 游乐场事件文件夹 -->
+            <a href="folder.html" class="desktop-icon" title="游乐场事件">
+                <div class="desktop-icon-img">&#x1F4C1;</div>
+                <div class="desktop-icon-label">游乐场事件</div>
+            </a>
+
+            <!-- 微信 -->
+            <a href="wechat.html" class="desktop-icon" title="微信">
+                <div class="desktop-icon-img">&#x1F4AC;</div>
+                <div class="desktop-icon-label">微信</div>
+            </a>
+
+            <!-- 蛛网搜索 -->
+            <a href="search.html" class="desktop-icon" title="蛛网搜索">
+                <div class="desktop-icon-img">&#x1F310;</div>
+                <div class="desktop-icon-label">蛛网搜索</div>
+            </a>
+
+            <!-- 侦探笔记 -->
+            <a href="notes.html" class="desktop-icon" title="侦探笔记">
+                <div class="desktop-icon-img">&#x1F4DD;</div>
+                <div class="desktop-icon-label">侦探笔记</div>
+            </a>
+
+        </div>
+
+        <!-- ===== 欢迎对话框 ===== -->
+        <div class="dialog-overlay" id="welcomeDialog">
+            <div class="window welcome-dialog">
+                <div class="window-title-bar">
+                    <span class="window-title-text">
+                        <span class="window-title-icon">&#x26A0;</span>
+                        系统提示
+                    </span>
+                    <div class="window-controls">
+                        <button class="window-btn window-btn-close" onclick="closeWelcome()">&#x2715;</button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="welcome-icon-row">
+                        <span class="welcome-icon">&#x1F575;</span>
+                        <span style="font-size:14px; font-weight:bold;">新案件委托已接收</span>
+                    </div>
+                    <p><b>案件：</b>碧波湾游乐园闭园真相调查</p>
+                    <p><b>委托人：</b>孟碧</p>
+                    <p><b>状态：</b>调查中</p>
+                    <p style="margin-top:8px; color:#444; font-size:12px;">请查看桌面"游乐场事件"文件夹获取案件资料</p>
+                    <div class="welcome-btn-row">
+                        <button class="btn" onclick="closeWelcome()">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 任务栏 ===== -->
+        <div class="taskbar">
+            <button class="start-button" onclick="toggleStartMenu()">
+                <span class="start-button-icon">&#x229E;</span>
+                <span>开始</span>
+            </button>
+            <div class="taskbar-separator"></div>
+            <div class="taskbar-items">
+                <div class="taskbar-item active">
+                    <span style="font-size:12px;">&#x25A0;</span>
+                    案件：碧波湾
+                </div>
+            </div>
+            <div class="system-tray">
+                <span class="system-tray-icon">&#x26A0;</span>
+                <span style="color:#888;">已断开</span>
+                <span class="system-tray-clock" id="clockDisplay">3:33</span>
+                <span style="font-size:10px; color:#666;">2001-10-31</span>
+            </div>
+        </div>
+
+        <!-- ===== 开始菜单（隐藏） ===== -->
+        <div id="startMenu" style="display:none; position:fixed; bottom:36px; left:0; z-index:10001;">
+            <div style="background:#c0c0c0; border-top:2px solid #fff; border-left:2px solid #fff; border-right:2px solid #000; border-bottom:2px solid #000; width:180px; padding:4px 0;">
+                <a href="folder.html" style="display:flex;align-items:center;gap:8px;padding:6px 16px;cursor:pointer;font-size:13px;"
+                   onmouseover="this.style.background='#000080';this.style.color='#fff'"
+                   onmouseout="this.style.background='';this.style.color=''">
+                    <span>&#x1F4C1;</span> 游乐场事件
+                </a>
+                <a href="wechat.html" style="display:flex;align-items:center;gap:8px;padding:6px 16px;cursor:pointer;font-size:13px;"
+                   onmouseover="this.style.background='#000080';this.style.color='#fff'"
+                   onmouseout="this.style.background='';this.style.color=''">
+                    <span>&#x1F4AC;</span> 微信
+                </a>
+                <a href="search.html" style="display:flex;align-items:center;gap:8px;padding:6px 16px;cursor:pointer;font-size:13px;"
+                   onmouseover="this.style.background='#000080';this.style.color='#fff'"
+                   onmouseout="this.style.background='';this.style.color=''">
+                    <span>&#x1F310;</span> 蛛网搜索
+                </a>
+                <a href="notes.html" style="display:flex;align-items:center;gap:8px;padding:6px 16px;cursor:pointer;font-size:13px;"
+                   onmouseover="this.style.background='#000080';this.style.color='#fff'"
+                   onmouseout="this.style.background='';this.style.color=''">
+                    <span>&#x1F4DD;</span> 侦探笔记
+                </a>
+                <div style="height:1px; background:#808080; margin:4px 0; border-top:1px solid #fff;"></div>
+                <div style="display:flex;align-items:center;gap:8px;padding:6px 16px;cursor:pointer;font-size:13px;"
+                     onmouseover="this.style.background='#000080';this.style.color='#fff'"
+                     onmouseout="this.style.background='';this.style.color=''"
+                     onclick="document.getElementById('startMenu').style.display='none';">
+                    <span>&#x2716;</span> 关闭
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // 关闭欢迎对话框
+        function closeWelcome() {
+            document.getElementById('welcomeDialog').style.display = 'none';
+        }
+
+        // 切换开始菜单
+        function toggleStartMenu() {
+            var menu = document.getElementById('startMenu');
+            if (menu.style.display === 'none') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+
+        // 点击桌面其他地方关闭开始菜单
+        document.querySelector('.desktop-icons').addEventListener('click', function() {
+            document.getElementById('startMenu').style.display = 'none';
+        });
+    </script>
+
+    <!-- 1996.09.01 它打开了大门 -->
+</body>
+</html>
