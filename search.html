@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蛛网搜索</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-scanlines crt-vignette">
+
+    <div class="sub-page">
+
+        <!-- 搜索窗口 -->
+        <div class="window search-window">
+            <!-- 标题栏 -->
+            <div class="window-title-bar">
+                <span class="window-title-text">
+                    <span class="window-title-icon">&#x1F310;</span>
+                    蛛网搜索
+                </span>
+                <div class="window-controls">
+                    <button class="window-btn">&#x2014;</button>
+                    <button class="window-btn">&#x25A1;</button>
+                    <button class="window-btn window-btn-close" onclick="window.location.href='index.html'">&#x2715;</button>
+                </div>
+            </div>
+
+            <!-- 菜单栏 -->
+            <div class="window-menu-bar">
+                <span class="window-menu-item">文件(F)</span>
+                <span class="window-menu-item">编辑(E)</span>
+                <span class="window-menu-item">查看(V)</span>
+                <span class="window-menu-item">收藏(A)</span>
+                <span class="window-menu-item">帮助(H)</span>
+            </div>
+
+            <!-- 搜索内容 -->
+            <div class="search-content">
+                <div class="search-logo">
+                    &#x1F578; 蛛 网 搜 索
+                </div>
+                <div class="search-subtitle">Welcome to ArachnoSearch v2.0</div>
+
+                <div class="search-box-area">
+                    <input type="text"
+                           class="search-input"
+                           placeholder="输入搜索关键词..."
+                           onkeydown="if(event.key==='Enter')searchHandler()">
+                    <button class="btn" style="padding:5px 16px;" onclick="searchHandler()">搜索</button>
+                </div>
+
+                <div class="search-hint">
+                    —— 注意 ——<br><br>
+                    搜索引擎功能正在开发中，<br>
+                    暂时无法使用。<br><br>
+                    <span style="font-size:10px; color:#bbb;">
+                    你确定要找的东西……真的存在吗？
+                    </span>
+                </div>
+            </div>
+
+            <!-- 状态栏 -->
+            <div class="window-status-bar">
+                <span>&#x1F517; 连接中...</span>
+                <span style="flex:1;"></span>
+                <span>2001-10-31</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回桌面 -->
+    <a href="index.html" class="back-link">
+        <div class="btn">
+            &#x25C0; 返回桌面
+        </div>
+    </a>
+
+    <script>
+        function searchHandler() {
+            var input = document.querySelector('.search-input').value.trim();
+            if (input) {
+                alert('蛛网搜索暂未开放。\n\n你搜索了：「' + input + '」\n\n搜索引擎仍在开发中，请稍后再试。');
+            }
+        }
+    </script>
+
+    <!-- 蛛网已断，等待重连 -->
+</body>
+</html>
