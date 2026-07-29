@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游乐场事件</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-scanlines crt-vignette">
+
+    <div class="sub-page">
+
+        <!-- 文件夹窗口 -->
+        <div class="window folder-window">
+            <!-- 标题栏 -->
+            <div class="window-title-bar">
+                <span class="window-title-text">
+                    <span class="window-title-icon">&#x1F4C1;</span>
+                    游乐场事件
+                </span>
+                <div class="window-controls">
+                    <button class="window-btn">&#x2014;</button>
+                    <button class="window-btn">&#x25A1;</button>
+                    <button class="window-btn window-btn-close" onclick="window.location.href='index.html'">&#x2715;</button>
+                </div>
+            </div>
+
+            <!-- 菜单栏 -->
+            <div class="window-menu-bar">
+                <span class="window-menu-item">文件(F)</span>
+                <span class="window-menu-item">编辑(E)</span>
+                <span class="window-menu-item">查看(V)</span>
+                <span class="window-menu-item">转到(G)</span>
+                <span class="window-menu-item">收藏(A)</span>
+                <span class="window-menu-item">帮助(H)</span>
+            </div>
+
+            <!-- 工具栏 -->
+            <div class="window-toolbar">
+                <button class="btn btn-toolbar" onclick="window.location.href='index.html'">&#x25C0; 后退</button>
+                <button class="btn btn-toolbar">&#x25B6;</button>
+                <button class="btn btn-toolbar">&#x25B2;</button>
+            </div>
+
+            <!-- 地址栏 -->
+            <div class="window-address-bar">
+                <span class="window-address-label">地址(D)</span>
+                <input class="window-address-input" value="C:\案件档案\碧波湾游乐园\游乐场事件" readonly>
+            </div>
+
+            <!-- 文件内容区域 -->
+            <div class="window-body">
+                <div class="file-grid">
+
+                    <!-- 照片1：开园典礼 -->
+                    <div class="file-item">
+                        <div class="file-item-icon">
+                            <span class="placeholder-icon">&#x1F5BC;</span>
+                            <span class="photo-hint">暂无预览</span>
+                        </div>
+                        <div class="file-item-name">开园典礼_1996.jpg</div>
+                    </div>
+
+                    <!-- 照片2：大门 -->
+                    <div class="file-item">
+                        <div class="file-item-icon">
+                            <span class="placeholder-icon">&#x1F5BC;</span>
+                            <span class="photo-hint">暂无预览</span>
+                        </div>
+                        <div class="file-item-name">大门全景.jpg</div>
+                    </div>
+
+                    <!-- 照片3：摩天轮 -->
+                    <div class="file-item">
+                        <div class="file-item-icon">
+                            <span class="placeholder-icon">&#x1F5BC;</span>
+                            <span class="photo-hint">暂无预览</span>
+                        </div>
+                        <div class="file-item-name">摩天轮.jpg</div>
+                    </div>
+
+                    <!-- 照片4：过山车 -->
+                    <div class="file-item">
+                        <div class="file-item-icon">
+                            <span class="placeholder-icon">&#x1F5BC;</span>
+                            <span class="photo-hint">暂无预览</span>
+                        </div>
+                        <div class="file-item-name">过山车.jpg</div>
+                    </div>
+
+                    <!-- 照片5：旋转木马 -->
+                    <div class="file-item">
+                        <div class="file-item-icon">
+                            <span class="placeholder-icon">&#x1F5BC;</span>
+                            <span class="photo-hint">暂无预览</span>
+                        </div>
+                        <div class="file-item-name">旋转木马.jpg</div>
+                    </div>
+
+                    <!-- 照片6：员工合影 -->
+                    <div class="file-item">
+                        <div class="file-item-icon">
+                            <span class="placeholder-icon">&#x1F5BC;</span>
+                            <span class="photo-hint">暂无预览</span>
+                        </div>
+                        <div class="file-item-name">员工合影.jpg</div>
+                    </div>
+
+                    <!-- 照片7：闭园通知 -->
+                    <div class="file-item">
+                        <div class="file-item-icon">
+                            <span class="placeholder-icon">&#x1F5BC;</span>
+                            <span class="photo-hint">暂无预览</span>
+                        </div>
+                        <div class="file-item-name">闭园通知.jpg</div>
+                    </div>
+
+                    <!-- 照片8：最后一张照片 -->
+                    <div class="file-item">
+                        <div class="file-item-icon">
+                            <span class="placeholder-icon">&#x2753;</span>
+                            <span class="photo-hint">文件损坏</span>
+                        </div>
+                        <div class="file-item-name">最后一张.jpg</div>
+                    </div>
+
+                    <!-- 文本文件：请先读我 -->
+                    <a href="notes.html" class="file-item" style="text-decoration:none; color:inherit;">
+                        <div class="file-item-icon" style="background:#fffde0;">
+                            <span class="placeholder-icon">&#x1F4C4;</span>
+                        </div>
+                        <div class="file-item-name">请先读我.txt</div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- 状态栏 -->
+            <div class="window-status-bar">
+                <span>9 个对象</span>
+                <span style="color:#888; flex:1;"></span>
+                <span>我的电脑</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回桌面 -->
+    <a href="index.html" class="back-link">
+        <div class="btn">
+            &#x25C0; 返回桌面
+        </div>
+    </a>
+
+    <!-- 游乐园的九张照片，对应开园九年 -->
+</body>
+</html>
