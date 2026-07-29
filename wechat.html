@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微信 - 孟碧</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-scanlines crt-vignette">
+
+    <div class="sub-page">
+
+        <!-- 微信窗口 -->
+        <div class="window wechat-window">
+            <!-- 标题栏 -->
+            <div class="window-title-bar">
+                <span class="window-title-text">
+                    <span class="window-title-icon">&#x1F4AC;</span>
+                    微信
+                </span>
+                <div class="window-controls">
+                    <button class="window-btn">&#x2014;</button>
+                    <button class="window-btn">&#x25A1;</button>
+                    <button class="window-btn window-btn-close" onclick="window.location.href='index.html'">&#x2715;</button>
+                </div>
+            </div>
+
+            <!-- 聊天头部 -->
+            <div class="wechat-header">
+                <button class="wechat-header-btn" style="font-size:20px;" onclick="window.location.href='index.html'">
+                    &#x2190;
+                </button>
+                <div class="wechat-avatar">孟</div>
+                <div class="wechat-header-info">
+                    <div class="wechat-name">孟碧</div>
+                    <div class="wechat-status">在线</div>
+                </div>
+                <button class="wechat-header-btn">&#x22EE;</button>
+            </div>
+
+            <!-- 聊天消息 -->
+            <div class="wechat-messages" id="chatMessages">
+
+                <!-- 消息1 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">你好，请问是私人侦探吗？</div>
+                </div>
+
+                <!-- 消息2 -->
+                <div class="msg-row msg-mine">
+                    <div class="msg-bubble">是的，你是？</div>
+                    <div class="msg-avatar-small mine">我</div>
+                </div>
+
+                <!-- 消息3 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">我叫孟碧，朋友介绍来的。有个事情想委托你调查。</div>
+                </div>
+
+                <!-- 消息4 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">关于一个游乐园的。碧波湾游乐园，你听说过吗？</div>
+                </div>
+
+                <!-- 消息5 -->
+                <div class="msg-row msg-mine">
+                    <div class="msg-bubble">没有印象，在哪儿？</div>
+                    <div class="msg-avatar-small mine">我</div>
+                </div>
+
+                <!-- 消息6 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">城郊那边，1996年开的。我小时候经常去，那时候人山人海，热闹得很。</div>
+                </div>
+
+                <!-- 消息7 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">过山车、摩天轮、旋转木马……在那个年代算很先进的项目了。</div>
+                </div>
+
+                <!-- 消息8 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">但是，只开了五年。2001年就关了。</div>
+                </div>
+
+                <!-- 消息9 -->
+                <div class="msg-row msg-mine">
+                    <div class="msg-bubble">关园的原因是什么？</div>
+                    <div class="msg-avatar-small mine">我</div>
+                </div>
+
+                <!-- 消息10 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">这就是问题……没人说得清。</div>
+                </div>
+
+                <!-- 消息11 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">有人说，游乐设施出了故障，出了事故，压死了人……</div>
+                </div>
+
+                <!-- 消息12 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">也有人说，老板借了高利贷，经营不下去了，卷钱跑了。</div>
+                </div>
+
+                <!-- 消息13 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">还有人说……那个地方，被人下了咒。</div>
+                </div>
+
+                <!-- 消息14 -->
+                <div class="msg-row msg-mine">
+                    <div class="msg-bubble">这些只是传闻吧？有实际证据吗？</div>
+                    <div class="msg-avatar-small mine">我</div>
+                </div>
+
+                <!-- 消息15 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">问题就在于，什么都查不到。</div>
+                </div>
+
+                <!-- 消息16 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">我最近去查了所有能找到的记录，工商注册、新闻档案……全部是空白。</div>
+                </div>
+
+                <!-- 消息17 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">像是被人刻意删过一样。一个开了五年的游乐园，不可能什么痕迹都不留。</div>
+                </div>
+
+                <!-- 消息18 -->
+                <div class="msg-row msg-mine">
+                    <div class="msg-bubble">确实奇怪。你为什么现在才来查这个？</div>
+                    <div class="msg-avatar-small mine">我</div>
+                </div>
+
+                <!-- 消息19 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">因为前段时间……我开始做同一个梦。</div>
+                </div>
+
+                <!-- 消息20 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">梦里那个游乐园还在开着。灯火通明，音乐在放，所有设施都在转。</div>
+                </div>
+
+                <!-- 消息21 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">但是一个人都没有。整个游乐园空无一人。</div>
+                </div>
+
+                <!-- 消息22 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">每次都是同一个梦。醒过来之后就再也没法不去想这件事。</div>
+                </div>
+
+                <!-- 消息23 -->
+                <div class="msg-row msg-mine">
+                    <div class="msg-bubble">明白了。你有什么资料可以给我看看？</div>
+                    <div class="msg-avatar-small mine">我</div>
+                </div>
+
+                <!-- 消息24 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">我整理了一些东西，发到你电脑桌面上了。文件夹叫"游乐场事件"，你去看看。</div>
+                </div>
+
+                <!-- 消息25 -->
+                <div class="msg-row msg-mine">
+                    <div class="msg-bubble">好，我现在就看。</div>
+                    <div class="msg-avatar-small mine">我</div>
+                </div>
+
+                <!-- 消息26 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">对了，还有一件事。</div>
+                </div>
+
+                <!-- 消息27 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">调查的时候……如果你听到了什么声音。</div>
+                </div>
+
+                <!-- 消息28 -->
+                <div class="msg-row msg-other">
+                    <div class="msg-avatar-small other">孟</div>
+                    <div class="msg-bubble">别回头。</div>
+                </div>
+
+                <!-- 消息29 -->
+                <div class="msg-row msg-mine">
+                    <div class="msg-bubble">什么意思？</div>
+                    <div class="msg-avatar-small mine">我</div>
+                </div>
+
+                <!-- 消息30：撤回 -->
+                <div class="msg-system">孟碧撤回了一条消息</div>
+
+            </div>
+
+            <!-- 输入区 -->
+            <div class="wechat-input-area">
+                <input type="text" class="wechat-input" placeholder="输入消息..." disabled>
+                <button class="btn" style="padding:4px 10px; font-size:12px;" disabled>发送</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回桌面 -->
+    <a href="index.html" class="back-link">
+        <div class="btn">
+            &#x25C0; 返回桌面
+        </div>
+    </a>
+
+    <!-- 3:33 别回头 -->
+</body>
+</html>
